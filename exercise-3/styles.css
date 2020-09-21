@@ -1,0 +1,20 @@
+.column {
+  display: flex;
+  float: left;
+  padding: 5px;
+}
+img {
+  width: 40px;
+  height: 40px;
+  margin-top: 20px;
+}
+#flip-horizontal {
+  transform: scaleX(-1);
+} 
+p {
+  text-align: center;
+}
+span {
+  border-bottom: solid orange 4px;
+}
+
