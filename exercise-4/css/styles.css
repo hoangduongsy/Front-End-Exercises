@@ -1,0 +1,98 @@
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* Place the container to the left */
+.left {
+ right: 10%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 70%;
+}
+
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+} 
+
+/* The actual content */
+.content-left, .content-right {
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 35px;
+  width: 0;
+  z-index: 1;
+  right: 40px;
+  border: medium solid white;
+  border-width: 5px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 35px;
+  width: 0;
+  z-index: 1;
+  left: 32px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+.container ul {
+  list-style: none;
+  padding-right: 90px;
+}
+
+.container ul:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ddd;
+  width: 1px;
+  height: 100%;
+  left: 55%;
+  margin-left: -10px;
+}
+.container ul li {
+  padding: 50px 60px;
+  position: relative;
+}
+
+li span {
+  position: relative;
+  font-size: 10px;
+  padding: 10px 0;
+  top: 45px;
+  border-radius: 50%;
+  border: 1px solid ;
+  width: 50px; 
+  margin-left: 280px;
+  background-color: #474e5d;
+}
