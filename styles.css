@@ -4,13 +4,11 @@
 }
 .image {
   float: left;
-  width: 240px;
-  height: 155px;
-  margin-right: 20px;
-  margin-left: 39px;
+  width: 301px;
+  height: 198px;
+  padding: 10px 32px  10px 65px;
 }
 p {
-  margin-left: 40px;
-  margin-right: 40px;
-  margin-top: 25px;
+  margin: 10px 0xp 10px 0px;
+  padding: 10px 65px 0px 65px;
 }
