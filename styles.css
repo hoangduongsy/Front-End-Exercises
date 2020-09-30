@@ -1,14 +1,12 @@
 .main {
   border-style: solid;
   border-width: 1px;
+  padding: 20px;
 }
 .image {
   float: left;
-  width: 301px;
-  height: 198px;
-  padding: 10px 32px  10px 65px;
-}
-p {
-  margin: 10px 0xp 10px 0px;
-  padding: 10px 65px 0px 65px;
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  margin: 0px 10px 10px 0px;
 }
